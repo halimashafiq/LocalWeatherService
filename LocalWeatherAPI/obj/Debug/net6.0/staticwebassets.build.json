@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "eWBj4NBGnh+r18ppRJ0VQP1OZuflTB5L362HCJznAmw=",
+  "Source": "LocalWeatherAPI",
+  "BasePath": "_content/LocalWeatherAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
