@@ -1,4 +1,4 @@
-﻿namespace LocalWeatherAPI.Models
+﻿namespace LocalWeatherLibrary.Models
 {
     public class LocalWeatherDatabaseSettings
     {

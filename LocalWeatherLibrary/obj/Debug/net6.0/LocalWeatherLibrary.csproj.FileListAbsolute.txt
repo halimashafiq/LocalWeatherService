@@ -1,0 +1,14 @@
+D:\PROJECTS\LocalWeatherService\LocalWeatherLibrary\bin\Debug\net6.0\LocalWeatherLibrary.deps.json
+D:\PROJECTS\LocalWeatherService\LocalWeatherLibrary\bin\Debug\net6.0\LocalWeatherLibrary.runtimeconfig.json
+D:\PROJECTS\LocalWeatherService\LocalWeatherLibrary\bin\Debug\net6.0\LocalWeatherLibrary.dll
+D:\PROJECTS\LocalWeatherService\LocalWeatherLibrary\bin\Debug\net6.0\LocalWeatherLibrary.pdb
+D:\PROJECTS\LocalWeatherService\LocalWeatherLibrary\obj\Debug\net6.0\LocalWeatherLibrary.csproj.AssemblyReference.cache
+D:\PROJECTS\LocalWeatherService\LocalWeatherLibrary\obj\Debug\net6.0\LocalWeatherLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROJECTS\LocalWeatherService\LocalWeatherLibrary\obj\Debug\net6.0\LocalWeatherLibrary.AssemblyInfoInputs.cache
+D:\PROJECTS\LocalWeatherService\LocalWeatherLibrary\obj\Debug\net6.0\LocalWeatherLibrary.AssemblyInfo.cs
+D:\PROJECTS\LocalWeatherService\LocalWeatherLibrary\obj\Debug\net6.0\LocalWeatherLibrary.csproj.CoreCompileInputs.cache
+D:\PROJECTS\LocalWeatherService\LocalWeatherLibrary\obj\Debug\net6.0\LocalWeatherLibrary.dll
+D:\PROJECTS\LocalWeatherService\LocalWeatherLibrary\obj\Debug\net6.0\refint\LocalWeatherLibrary.dll
+D:\PROJECTS\LocalWeatherService\LocalWeatherLibrary\obj\Debug\net6.0\LocalWeatherLibrary.pdb
+D:\PROJECTS\LocalWeatherService\LocalWeatherLibrary\obj\Debug\net6.0\LocalWeatherLibrary.genruntimeconfig.cache
+D:\PROJECTS\LocalWeatherService\LocalWeatherLibrary\obj\Debug\net6.0\ref\LocalWeatherLibrary.dll

@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace LocalWeatherAPI.Models;
+namespace LocalWeatherLibrary.Models;
 
 public class LocalWeather
 {

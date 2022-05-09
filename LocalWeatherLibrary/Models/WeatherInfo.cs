@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
 
-namespace LocalWeatherAPI.Models
+namespace LocalWeatherLibrary.Models
 {
 
         public partial class WeatherInfo

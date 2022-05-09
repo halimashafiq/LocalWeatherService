@@ -1,7 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using LocalWeatherAPI.Models;
+using LocalWeatherLibrary.Models;
+using MediatR;
+using System.Reflection;
+using LocalWeatherLibrary.Data;
 using LocalWeatherAPI.Services;
-
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,22 +12,20 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<LocalWeatherDatabaseSettings>(builder.Configuration.GetSection("LocalWeatherDatabase"));
 builder.Services.AddSingleton<LocalWeatherService>();
 
-//This is the depedency for the appsettings json
-ConfigurationManager configuration = builder.Configuration;
+//ConfigurationManager configuration = builder.Configuration;
 
-//Registering our database
 builder.Services.AddControllers();
-
-//Registering AutoMapper
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<ILocalWeatherService, LocalWeatherService>(); // Add data access to dependency container.
+builder.Services.AddMediatR(typeof(LocalWeatherService).Assembly);
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+
     app.UseSwagger();
     app.UseSwaggerUI();
 }
@@ -42,11 +42,14 @@ using IHost host = Host.CreateDefaultBuilder(args)
         services.AddHostedService<WorkerService>();
         services.AddSingleton<LocalWeatherService>();
         services.Configure<LocalWeatherDatabaseSettings>(builder.Configuration.GetSection("LocalWeatherDatabase"));
+        services.AddScoped<ILocalWeatherService, LocalWeatherService>(); // Add data access to dependency container.
+        services.AddMediatR(typeof(LocalWeatherService).Assembly);
     })
     .Build();
 
 host.RunAsync();
 
 app.Run();
+
 
 
